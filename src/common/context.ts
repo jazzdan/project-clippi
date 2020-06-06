@@ -36,16 +36,27 @@ const comboString = `{"playerIndex":0,"opponentIndex":2,"startFrame":7146,"endFr
 export const exampleComboType: ComboType = JSON.parse(comboString);
 
 export const generateGameStartContext = (gameStart: GameStartType, context?: Context, index?: number): Context => {
-  const numPlayers = gameStart.players.length;
-  let ctx: Context = {
-    numPlayers,
-  };
-  const stageId = gameStart.stageId;
-  if (stageId) {
-    ctx.stage = getStageName(stageId);
-    ctx.shortStage = getStageShortName(stageId);
+  let ctx: Context = {};
+  try {
+    const numPlayers = gameStart.players.length;
+    ctx.numPlayers = numPlayers;
+    const stageId = gameStart.stageId;
+    if (stageId) {
+      ctx.stage = getStageName(stageId);
+      ctx.shortStage = getStageShortName(stageId);
+    }
+    ctx = genPlayerOpponentContext(gameStart, ctx, index);
+  } catch (err) {
+    console.log("This error is probably really bad:");
+    console.error(err);
+    console.log("We're just gonna log as much info as possible.");
+    console.log("game start:");
+    console.log(JSON.stringify(gameStart, undefined, 2));
+    console.log("context:");
+    console.log(JSON.stringify(context, undefined, 2));
+    console.log("index:");
+    console.log(JSON.stringify(index, undefined, 2));
   }
-  ctx = genPlayerOpponentContext(gameStart, ctx, index);
   return Object.assign(ctx, context);
 };
 
