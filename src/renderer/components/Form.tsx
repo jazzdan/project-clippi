@@ -64,7 +64,7 @@ Field.defaultProps = {
   padding: "both",
 };
 
-const ToggleOuter = styled.div`
+const ToggleOuter = styled(Label)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,9 +83,9 @@ export const Toggle: React.FC<{
   };
   return (
     <ToggleOuter>
-      <Label style={{ cursor: props.onChange ? "pointer" : "auto" }} onClick={() => onChange(!props.value)}>
+      <span style={{ cursor: props.onChange ? "pointer" : "auto" }} onClick={() => onChange(!props.value)}>
         {props.label}
-      </Label>
+      </span>
       <Checkbox checked={props.value} onChange={(_, data) => onChange(Boolean(data.checked))} toggle={true} />
     </ToggleOuter>
   );
