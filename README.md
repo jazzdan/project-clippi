@@ -45,18 +45,15 @@ _Easily load SLP files into Dolphin with just a drag and drop!_
 
 Download Project Clippi for your operating system using the links below or check out [the releases page](https://github.com/vinceau/project-clippi/releases/latest) for more information.
 
-- [Project Clippi for Windows](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.3.exe)
-- [Project Clippi for MacOS](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.3.dmg)
-- [Project Clippi for Linux](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.3.AppImage)
+- [Project Clippi for Windows](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.7.exe)
+- [Project Clippi for MacOS](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.7.dmg)
+- [Project Clippi for Linux](https://github.com/vinceau/project-clippi/releases/latest/download/Project-Clippi-1.3.7.AppImage)
 
 ## Usage
 
-To make combo videos using Project Clippi, check out [this guide](https://medium.com/@vinceau/how-to-make-combo-videos-using-project-clippi-6bf2758f546e).
+To make combo videos using the Project Clippi, check out [this guide](https://medium.com/@vinceau/how-to-make-combo-videos-using-project-clippi-6bf2758f546e) on using the Replay Processor.
 
-To take advantage of real-time game events you will need to connect Project Clippi to a Slippi source. You can connect to a console source using the [Slippi Desktop App](https://slippi.gg/downloads) as a relay, or connect to a folder that has live SLP files being written to it. e.g. Slippi Dolphin. Follow the links below based on what source you are connecting to.
-
-- [Connecting to a Slippi Relay](docs/connect_to_relay/README.md)
-- [Connecting to a folder (Dolphin)](docs/connect_to_folder/README.md)
+To take advantage of real-time game events you will need to connect Project Clippi to a console source using the [Slippi Desktop App](https://slippi.gg/downloads) as a relay. Check out [this guide](docs/connect_to_relay/README.md) for connecting to a relay.
 
 ## Contributing
 
@@ -86,7 +83,7 @@ For more detailed instructions on development and building the project from sour
 
 ## Acknowledgements
 
-Project Clippi wouldn't be here without the work of [Jas Laferriere](https://github.com/JLaferri) and the rest of the [Project Slippi](https://github.com/project-slippi) team, and all the [Project Clippi supporters](SUPPORTERS.md).
+Project Clippi wouldn't be here without the work of [Jas Laferriere](https://github.com/JLaferri), the rest of the [Project Slippi](https://github.com/project-slippi) team, and all the [Project Clippi supporters](SUPPORTERS.md).
 
 ## License
 
