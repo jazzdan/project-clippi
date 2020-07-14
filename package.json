@@ -1,7 +1,7 @@
 {
   "productName": "Project Clippi",
   "name": "project-clippi",
-  "version": "1.3.3",
+  "version": "1.3.7",
   "description": "A Melee Automation Framework",
   "license": "MIT",
   "author": {
@@ -28,7 +28,7 @@
     "@rematch/core": "^1.3.0",
     "@rematch/persist": "^1.1.6",
     "@vinceau/event-actions": "^0.0.4",
-    "@vinceau/slp-realtime": "file:.yalc/@vinceau/slp-realtime",
+    "@vinceau/slp-realtime": "^2.3.10",
     "electron-context-menu": "^0.15.1",
     "electron-store": "^5.1.1",
     "emotion-theming": "^10.0.27",
@@ -53,10 +53,8 @@
     "react-final-form": "^6.3.3",
     "react-final-form-arrays": "^3.1.1",
     "react-gamecube": "^0.0.1",
-    "react-hook-form": "^5.7.2",
     "react-markdown": "^4.3.1",
     "react-redux": "^7.1.0",
-    "react-reflex": "^3.1.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-select": "^3.0.8",
@@ -69,7 +67,6 @@
     "semver": "^7.3.2",
     "source-map-support": "^0.5.10",
     "timeago.js": "^4.0.2",
-    "trash": "^6.1.1",
     "twitch": "^4.0.10",
     "twitch-chat-client": "^4.0.10",
     "twitch-electron-auth-provider": "^4.0.10"
